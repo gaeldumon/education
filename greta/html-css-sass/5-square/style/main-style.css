@@ -1,0 +1,30 @@
+header {
+	text-align: center;
+	margin-top: 1%;
+}
+
+/*
+On fait ça pour supprimer l'espace insecable present sur des elements inline-block
+Sans cela, les carrés seront legerement separés par un peu d'espace
+*/
+
+#sq-container {
+	font-size: 0;
+}
+
+.sq {
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	margin: 5px;
+	font-size: 12;
+	background-color: #f07ff4;
+}
+
+.sq:nth-child(1) {
+	background-color: #7fc9f4;
+}
+
+.sq:nth-child(2) {
+	background-color: #a4f47f;
+}

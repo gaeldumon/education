@@ -1,0 +1,16 @@
+@function calculateRem($size) {
+	$remSize: $size/16px;
+	@return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+
+@mixin button($color) {
+	background-color: $color;
+	&:hover {
+		background-color: darken($color, 10);
+	}
+}

@@ -1,0 +1,129 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	top: -0.5em;
+}
+
+body {
+	font-family: arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	width: 70%;
+	margin: auto;
+}
+
+.deals {
+	overflow: hidden;
+	clear: both;
+	margin-top: 50px;
+}
+
+.deals-title {
+	margin-bottom: 15px;
+	font-family: 'Montserrat', arial, sans-serif;
+	font-weight: bold;
+	font-size: 27px;
+	color: #242d44;
+}
+
+.deals article {
+	float: left;
+
+	width: 25.6%;
+	margin-right: 20px;
+	margin-bottom: 23px;
+	border: 1px solid #edeef0;
+}
+
+.image-deal {
+	position: relative;
+	background-color: #000;
+}
+
+.image-deal img:hover {
+	opacity: 0.6;
+}
+
+.image-deal img {
+	/*Corrige le prb de la balise lien qui depasse un peu*/
+	display: block;
+
+	width: 100%;
+	height: 100%;
+}
+
+.promotion-link {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	height: 40px;
+	background-color: #ff5f46;
+	color: #fff;
+	font-size: 9px;
+	padding: 3px;
+}
+
+.promotion-link-amount {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.deal-body {
+	padding: 10px;
+}
+
+.name-deal {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.name-deal a {
+	color: #242d44;
+}
+
+.catchphrase-deal {
+	color: #0159c9;
+	font-weight: 700;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.description-deal {
+	color: #4b5264;
+	font-size: 12px;
+	margin-bottom: 9px;
+}
+
+.price-deal {
+	font-size: 22px;
+}
+
+.price-deal a {
+	color: #ff5f46;
+}
+
+.price-deal a .prefix-price {
+	font-size: 9px;
+}
+
+.price-deal a .ttc {
+	text-transform: uppercase;
+	font-size: 9px;
+}

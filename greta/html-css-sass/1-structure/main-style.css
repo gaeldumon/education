@@ -1,0 +1,65 @@
+h1 {
+	color: lightgrey;
+	font-family: arial;
+	font-size: 3em;
+	text-align: center;
+	animation-name: rand_color;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rand_color {
+	0% {color: #f4c369;}
+	50% {color: #80acf7;}
+	100% {color: #f4c369;}
+}
+
+.main-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	background-color: lightgrey;
+}
+
+.main-container div {
+	width: 300px;
+	height: 300px;
+}
+
+.main-container div h2, h3, h4, h5, h6 {
+	font-family: arial;
+	color: white;
+	text-align: center;
+	vertical-align: center;
+}
+
+.main-container div:hover {
+	background-color: lightgrey;
+}
+
+.main-container .el1 {
+	background-color: #80f790;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-container .el2 {
+	background-color: #80acf7;
+}
+
+.main-container .el3 {
+	background-color: #f4c369;
+}
+
+ul, ol {
+	font-family: arial;
+	color: grey;
+}
+
+footer {
+	font-family: arial;
+	font-size: 0.8em;
+	text-align: center;
+}

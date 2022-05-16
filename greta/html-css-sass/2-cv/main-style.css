@@ -1,0 +1,92 @@
+body {
+	background-color: lightgrey;
+	font-family: arial;
+}
+/*--------------------------------------------------------*/
+ul {
+	list-style: none;
+}
+
+strong {
+	font-weight: normal;
+}
+
+/*--------------------------------------------------------*/
+header {
+	background-color: #80f790;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header nav {
+	width: 70%;
+	margin-top: 50px;
+}
+
+header nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 0;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+header nav ul li a:hover {
+	font-weight: bold;
+}
+/*--------------------------------------------------------*/
+.sub-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sub-header h1 {
+	margin: 0;
+	font-size: 4em;
+}
+
+.sub-header img:hover {
+	opacity: 0.7;
+}
+/*--------------------------------------------------------*/
+section {
+	background-color: #a87de8;
+	padding-bottom: 20px;
+}
+
+section > ul {
+	padding-left: 0;
+}
+
+section > h3 {
+	text-transform: uppercase;
+}
+/*--------------------------------------------------------*/
+#section-projects ul li a {
+	color: black;
+}
+
+#section-projects ul li a:hover {
+	font-weight: bold;
+}
+
+#section-school strong {
+	font-weight: normal;
+}
+/*--------------------------------------------------------*/
+footer {
+	background-color: #80acf7
+}
+
+footer p {
+	text-align: center;
+	font-size: 0.7em;
+}
+/*--------------------------------------------------------*/

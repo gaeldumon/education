@@ -1,0 +1,47 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*
+Overflow:hidden et clear:both a appliquer sur le parent de ce que l'on a declaré float
+ici float:left sur le carré
+Pour casser le fait que .outside-paragraph sort du flux quand on declare un truc avant en float (ici .square)
+*/
+.content {
+	overflow: hidden;
+	clear: both;
+}
+
+.square {
+	width: 200px;
+	height: 200px;
+	background-color: #e8aaf7;
+
+	float: left;
+}
+
+.outside-paragraph {
+	clear: both;
+
+	margin-top: 50px;
+}
+
+.square-1, .square-2, .square-3 {
+	width: 150px;
+	height: 150px;
+	float: right;
+}
+
+.square-1 {
+	background-color: #88fc76;
+}
+
+.square-2 {
+	background-color: #76d6fc;
+}
+
+.square-3 {
+	background-color: #fcfa76;
+}

@@ -1,0 +1,100 @@
+/*
+On doit "display: inline block" tous les elements que l'on veut voir côte a côte.
+On evite au maximumu de specifier des height.
+*/
+
+/*To include padding and border in the element's total width and height:*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	border-bottom: 1px solid #c1c1c1;
+}
+
+header .wrapper {
+	font-size: 0;
+}
+
+header .logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 23%;
+	margin-left: 10%;
+}
+
+.menu {
+	display: inline-block;
+	vertical-align: middle;
+	width: 66%;
+}
+
+/*position: relative pour les conteneurs des sous-menus (qui eux sont mis en position absolute car sortis du flux)*/
+.menu-top-element {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+.menu-top-element:hover > a {
+	color: #03c3ea;
+}
+
+.menu-top-element > a {
+	padding-left: 17px;
+	padding-right: 17px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #333333;
+}
+
+/*position: absolute pour sortir les sous-menu du flux principal*/
+.sub-menu {
+	display: none;
+	position: absolute;
+	padding-top: 29px;
+}
+
+.menu-top-element:hover .sub-menu {
+	display: block;
+}
+
+.sub-menu li {
+	display: block;
+	padding: 18px;
+	border-left: 1px solid #e5eae7;
+	border-right: 1px solid #e5eae7;
+	border-top: 1px solid #e5eae7;
+	white-space: nowrap;
+	background-color: #fff;
+}
+
+.sub-menu li:hover a {
+	color: #03c3ea;
+}
+
+/*Bottom border only on last <li> of sub-menus*/
+.sub-menu:last-child {
+	border-bottom: 1px solid #e5eae7;
+}
+
+.sub-menu li a {
+	font-size: 13px;
+	font-weight: 600;
+	color: #999999;
+	text-transform: none;
+	letter-spacing: 0px;
+}
+
+
+

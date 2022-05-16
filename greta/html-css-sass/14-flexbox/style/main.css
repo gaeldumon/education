@@ -1,0 +1,36 @@
+#container {
+	height: 500px;
+
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+
+	align-items: center;
+
+	/*Last level of Froggy Flexbox :*/
+	/*flex-flow: column-reverse wrap-reverse;
+	align-items: space-between;
+	justify-content: center;
+	align-content: space-between;*/
+
+	background-color: #d2d2d2;
+}
+
+.squares {
+	width: 100px;
+	height: 100px;
+	background-color: #000;
+}
+
+.squares:nth-child(1) {
+	background-color: rgb(185, 82, 197);
+}
+
+.squares:nth-child(2) {
+	background-color: rgb(252, 244, 51);
+}
+
+.squares:nth-child(3) {
+	background-color: rgb(83, 52, 252);
+}

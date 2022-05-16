@@ -1,0 +1,86 @@
+/*
+Un selecteur css a un poids. Par exemple un poids de 2.
+Si tu écris header {} -> poids de 2
+Si tu écris header p {} -> poids de 4
+Les classes (selecteur .) ont un poids de 5
+*/
+
+body {
+	background-color: #edd9c0;
+	font-family: arial;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-top: 33px;
+}
+
+header img {
+	width: 200px;
+	height: 200px;
+	border-radius: 98px;
+	margin-top: 16px;
+}
+
+h1 {
+	color: #7d4627;
+	font-size: 3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+main {
+	color: #a8b6bf;
+}
+
+.header-about {
+	width: 50%;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: #a8b6bf;
+}
+
+#lastname {
+	color: #7d4627;
+	font-size: 2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+#infos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 80%;
+	color: #a8b6bf;
+}
+
+#infos li {
+	padding: 5px;
+	width: 25%;
+}
+
+#infos li a {
+	color: #bcd5d1;
+}
+
+#infos li a:hover {
+	font-weight: bold;
+}
+
+.separator {
+	display: block;
+	height: 7px;
+	width: 100%;
+	background-image: linear-gradient(to right, black, purple, indigo, violet, pink, yellow);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,69 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', arial, sans-serif;
+}
+
+.wrapper {
+	margin-left: 25%;
+	margin-top: 5%;
+	width: 50%;
+}
+
+.animals {
+	font-size: 0;
+}
+
+.animals article {
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+	box-shadow: 2px 2px 5px 2px #bbbbc0;
+}
+
+.title-animal {
+	font-size: 14px;
+	font-style: italic;
+	color: #b0b3b2;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+.title-animal span {
+	display: block;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+.image-animal {
+	position: relative;
+	border: solid 6px #f4f4f4;
+}
+
+.button-link {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 15px 0 0 0;
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #8AB22B;
+}
+
+.button-link:hover {
+	background-color: #fff;
+	color: #8ab22b;
+}
